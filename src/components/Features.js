@@ -9,7 +9,7 @@ const Features = () => {
   const features = [
     {
       icon: '📝',
-      title: 'Task Adding Interface',
+      title: 'task adding interface',
       description: 'Intuitive UI for adding tasks directly in your Spectacles view. Simple gestures and voice commands make task creation effortless.',
       details: [
         'Gesture-based input',
@@ -20,7 +20,7 @@ const Features = () => {
     },
     {
       icon: '🤖',
-      title: 'AI & Voice Integration',
+      title: 'ai & voice integration',
       description: 'Smart AI analyzes your conversations and context to suggest relevant tasks, plus hands-free voice commands for task creation.',
       details: [
         'AI conversation analysis',
@@ -31,7 +31,7 @@ const Features = () => {
     },
     {
       icon: '📍',
-      title: 'Spatial Detection',
+      title: 'spatial detection',
       description: 'Location-aware reminders that appear when you\'re in the right place. See grocery lists at the store, home tasks when you arrive.',
       details: [
         'GPS and spatial tracking',
@@ -56,9 +56,9 @@ const Features = () => {
     <section id="features" className="features section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="section-title">Key Features</h2>
+          <h2 className="section-title">key features</h2>
           <p className="section-description">
-            Built for Snapchat Spectacles with Lens Studio - the future of hands-free productivity
+            Built for Snapchat Spectacles with Lens Studio
           </p>
         </div>
 
@@ -75,16 +75,8 @@ const Features = () => {
               <div className="feature-content">
                 <h3 className="feature-title">{feature.title}</h3>
                 <p className="feature-description">{feature.description}</p>
-                <ul className="feature-details">
-                  {feature.details.map((detail, detailIndex) => (
-                    <li key={detailIndex} className="feature-detail">
-                      <span className="detail-bullet">•</span>
-                      {detail}
-                    </li>
-                  ))}
-                </ul>
                 <div className="feature-cta">
-                  <span className="click-hint">Click to see demo →</span>
+                  <span className="click-hint">See demo</span>
                 </div>
               </div>
             </div>
@@ -92,11 +84,16 @@ const Features = () => {
         </div>
 
         <div className="features-cta text-center">
-          <h3>Built for Hackathon Demo</h3>
-          <p>Experience the future of AR task management with Snapchat Spectacles and Lens Studio.</p>
-          <a href="#demo" className="btn btn-primary">
-            Watch Demo Video
-          </a>
+          <h3>explore the project</h3>
+          <p>Check out the live website and GitHub repository for more details.</p>
+          <div className="cta-buttons">
+            <a href="https://github.com/hiheidiz/ureminders.github.io" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              Website Repo
+            </a>
+            <a href="https://github.com/Anipaleja/MHacks" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              Project Repo
+            </a>
+          </div>
         </div>
       </div>
       

@@ -154,6 +154,7 @@
   border-radius: 20px;
   padding: 60px 40px;
   border: 2px solid #333333;
+  margin-top: 180px;
 }
 
 .features-cta h3 {
@@ -167,6 +168,24 @@
   font-size: 16px;
   color: #cccccc;
   margin-bottom: 32px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Mobile responsive */

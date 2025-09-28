@@ -6,7 +6,7 @@ const DemoVideo = () => {
     <section id="demo" className="demo-video section">
       <div className="container">
         <div className="section-header text-center">
-          <h2 className="section-title">See it in Action</h2>
+          <h2 className="section-title">see it in action</h2>
           <p className="section-description">
             Watch how ureminders works on Snapchat Spectacles
           </p>
@@ -20,7 +20,7 @@ const DemoVideo = () => {
               </svg>
             </div>
             <div className="video-text">
-              <h3>Demo Video</h3>
+              <h3>demo video</h3>
               <p>Coming soon - Spectacles lens demo</p>
             </div>
           </div>
