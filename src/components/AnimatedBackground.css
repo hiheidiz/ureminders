@@ -1,0 +1,123 @@
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floating-square {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 8px;
+  opacity: 0.7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.square-1 {
+  width: 60px;
+  height: 60px;
+  top: 20%;
+  left: 15%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.square-2 {
+  width: 40px;
+  height: 40px;
+  top: 60%;
+  right: 20%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.square-3 {
+  width: 80px;
+  height: 80px;
+  bottom: 30%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.square-4 {
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  right: 10%;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.square-5 {
+  width: 35px;
+  height: 35px;
+  top: 10%;
+  right: 30%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.square-6 {
+  width: 70px;
+  height: 70px;
+  bottom: 15%;
+  right: 15%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.square-7 {
+  width: 45px;
+  height: 45px;
+  top: 70%;
+  left: 25%;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-square {
+    opacity: 0.5;
+  }
+  
+  .square-1 {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .square-2 {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .square-3 {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .square-4 {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .square-5 {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .square-6 {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .square-7 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-square {
+    opacity: 0.4;
+  }
+}
