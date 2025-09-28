@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import DemoVideo from './components/DemoVideo';
+import Motivation from './components/Motivation';
 import Features from './components/Features';
+import HowWeBuiltIt from './components/HowWeBuiltIt';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -11,8 +12,9 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
-      <DemoVideo />
+      <Motivation />
       <Features />
+      <HowWeBuiltIt />
       <Footer />
     </div>
   );

@@ -18,7 +18,6 @@ const Header = () => {
           </div>
           
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <a href="#demo" className="nav-link">Demo</a>
             <a href="#features" className="nav-link">Features</a>
             <a href="#features" className="nav-link">GitHub</a>
           </nav>

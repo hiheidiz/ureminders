@@ -75,9 +75,6 @@ const Features = () => {
               <div className="feature-content">
                 <h3 className="feature-title">{feature.title}</h3>
                 <p className="feature-description">{feature.description}</p>
-                <div className="feature-cta">
-                  <span className="click-hint">See demo</span>
-                </div>
               </div>
             </div>
           ))}
