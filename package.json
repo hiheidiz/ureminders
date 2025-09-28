@@ -2,7 +2,7 @@
   "name": "ureminders-website",
   "version": "1.0.0",
   "description": "Website for ureminders - AI-powered location-aware task reminders on Snapchat",
-  "homepage": "https://hiheidiz.github.io/ureminders.github.io",
+  "homepage": "https://hiheidiz.github.io/ureminders/",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
