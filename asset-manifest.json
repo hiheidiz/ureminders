@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ureminders/static/css/main.599a5044.css",
-    "main.js": "/ureminders/static/js/main.3dd8a8e7.js",
+    "main.css": "/ureminders/static/css/main.45ba098c.css",
+    "main.js": "/ureminders/static/js/main.17f1532a.js",
     "index.html": "/ureminders/index.html",
-    "main.599a5044.css.map": "/ureminders/static/css/main.599a5044.css.map",
-    "main.3dd8a8e7.js.map": "/ureminders/static/js/main.3dd8a8e7.js.map"
+    "main.45ba098c.css.map": "/ureminders/static/css/main.45ba098c.css.map",
+    "main.17f1532a.js.map": "/ureminders/static/js/main.17f1532a.js.map"
   },
   "entrypoints": [
-    "static/css/main.599a5044.css",
-    "static/js/main.3dd8a8e7.js"
+    "static/css/main.45ba098c.css",
+    "static/js/main.17f1532a.js"
   ]
 }
