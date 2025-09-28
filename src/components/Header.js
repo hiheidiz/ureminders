@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <div className="logo">
-            <img src="/logo.png" alt="ureminders logo" className="logo-image" />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="ureminders logo" className="logo-image" />
             <h1>ureminders</h1>
           </div>
           

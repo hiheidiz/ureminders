@@ -83,20 +83,20 @@ const Hero = () => {
       {/* Hero Images */}
       <div className="hero-images">
         <div className="hero-image study-image">
-          <img src="/study.jpeg" alt="Study" />
+          <img src={`${process.env.PUBLIC_URL}/study.jpeg`} alt="Study" />
         </div>
         <div className="hero-image spectacles-image">
-          <img src="/spectacles.png" alt="Spectacles" />
+          <img src={`${process.env.PUBLIC_URL}/spectacles.png`} alt="Spectacles" />
         </div>
         <div className="hero-image grocery-image">
-          <img src="/grocery.jpg" alt="Grocery" />
+          <img src={`${process.env.PUBLIC_URL}/grocery.jpg`} alt="Grocery" />
         </div>
       </div>
       
       <div className="container">
         <div className="hero-content">
           <div className="hero-logo" ref={logoRef}>
-            <img src="/logo.png" alt="ureminders logo" className="hero-logo-image" />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="ureminders logo" className="hero-logo-image" />
           </div>
           
           <h1 className="hero-title" ref={titleRef}>
