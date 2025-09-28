@@ -85,6 +85,33 @@
   border-color: #6478f5;
 }
 
+.feature-card.clickable {
+  cursor: pointer;
+}
+
+.feature-card.clickable:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px rgba(255, 255, 255, 0.15);
+}
+
+.feature-cta {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #333333;
+}
+
+.click-hint {
+  color: #6478f5;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.feature-card.clickable:hover .click-hint {
+  color: #4f63d2;
+  transform: translateX(4px);
+}
+
 .feature-title {
   font-size: 24px;
   font-weight: 600;

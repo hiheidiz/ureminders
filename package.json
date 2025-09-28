@@ -2,12 +2,15 @@
   "name": "ureminders-website",
   "version": "1.0.0",
   "description": "Website for ureminders - AI-powered location-aware task reminders on Snapchat",
+  "homepage": "https://hiheidiz.github.io/ureminders.github.io",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gsap": "^3.13.0",
@@ -26,5 +29,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

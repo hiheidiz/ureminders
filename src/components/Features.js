@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import FeatureModal from './FeatureModal';
 import './Features.css';
 
 const Features = () => {
+  const [selectedFeature, setSelectedFeature] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const features = [
     {
       icon: '📝',
@@ -11,7 +15,8 @@ const Features = () => {
         'Gesture-based input',
         'Quick task templates',
         'Priority setting'
-      ]
+      ],
+      image: 'https://via.placeholder.com/600x400/6478f5/ffffff?text=Task+Adding+Interface+Demo'
     },
     {
       icon: '🤖',
@@ -21,7 +26,8 @@ const Features = () => {
         'AI conversation analysis',
         'Voice task creation',
         'Context-aware suggestions'
-      ]
+      ],
+      image: 'https://via.placeholder.com/600x400/6478f5/ffffff?text=AI+Voice+Integration+Demo'
     },
     {
       icon: '📍',
@@ -31,9 +37,20 @@ const Features = () => {
         'GPS and spatial tracking',
         'Context-aware filtering',
         'Proximity-based display'
-      ]
+      ],
+      image: 'https://via.placeholder.com/600x400/6478f5/ffffff?text=Spatial+Detection+Demo'
     }
   ];
+
+  const handleFeatureClick = (feature) => {
+    setSelectedFeature(feature);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedFeature(null);
+  };
 
   return (
     <section id="features" className="features section">
@@ -47,7 +64,11 @@ const Features = () => {
 
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div key={index} className="feature-card">
+            <div 
+              key={index} 
+              className="feature-card clickable"
+              onClick={() => handleFeatureClick(feature)}
+            >
               <div className="feature-icon">
                 <span className="icon">{feature.icon}</span>
               </div>
@@ -62,6 +83,9 @@ const Features = () => {
                     </li>
                   ))}
                 </ul>
+                <div className="feature-cta">
+                  <span className="click-hint">Click to see demo →</span>
+                </div>
               </div>
             </div>
           ))}
@@ -75,6 +99,12 @@ const Features = () => {
           </a>
         </div>
       </div>
+      
+      <FeatureModal 
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        feature={selectedFeature}
+      />
     </section>
   );
 };
