@@ -8,7 +8,6 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // hi
   return (
     <header className="header">
       <div className="container">
